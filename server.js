@@ -38,7 +38,7 @@ app.route('/api/users')
 .post(userController.createUser);
 
 app.route('/api/users/:_id/exercises').post(userController.addExercise);
-
+// 
 app.route('/api/users/:_id/logs').get(userController.retrieveExLogs);
 
 const listener = app.listen(process.env.PORT || 3000, () => {
